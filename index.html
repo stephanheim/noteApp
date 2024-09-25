@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notes by sh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="render()">
+    
+    <!-- header -->
+    
+    <div class="header">
+      <h1>notes by sh</h1>
+    </div>
+    <div class="buttons">
+      <button onclick="renderTrash()" class="button" id="rec-btn">receycle bin</button>
+      <button onclick="returnHome()" class="button-trash d-none" id="return-btn">return to notes</button>
+    </div>
+
+    <!-- first note - rest will be rendered in js -->
+
+    <div id="first" class="notes">
+      <div class="menu">
+        <input id="note-title" class="n-title" type="text" placeholder="Enter title here..." />
+        <div>
+          <img onclick="addNote()" src="./img/save.png" class="icons" />
+        </div>
+    </div>
+      <br />
+      <textarea id="note-text" class="n-text" placeholder="Enter your notes here...">
+      </textarea>   
+    </div>
+    <div id="content"></div>
+    </div>
+  </body>
+</html>
